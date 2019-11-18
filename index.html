@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Zniken</title>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="image/x-icon" href="ZnikenLogo.ico" />
+  <link rel="stylesheet" href="Style.css"/>
+  <script src="JavaScript.js"></script>
+</head>
+
+<body>
+  <figure>
+    <img src="logo.png" />
+    <figcaption>producent automatów ze zniczmi</figcaption>
+  </figure>
+  
+  <nav>
+    <ul>
+      <li><a onclick="changeIframe('mainPage.html');">strona główna</a></li>
+      <li><a onclick="changeIframe('offer.html');">oferta</a></li>
+      <li><a onclick="changeIframe('business.html');">o firmie</a></li>
+      <li><a onclick="changeIframe('advert.html');">reklama</a></li>
+      <li><a onclick="changeIframe('collaboration.html');">współpraca</a></li>
+      <li><a onclick="changeIframe('gallery.html');">galeria</a></li>
+      <li><a onclick="changeIframe('contact.html');">kontakt</a></li>
+    </ul>
+  </nav>
+  <div id="background-container"><div id="background"></div></div>
+  <div id="content-container">
+    <iframe id="content" src="gallery.html" height="2000vh" scrolling="no" width="100%" onload="resizeIframe(this)"></iframe>
+  </div>
+  
+  
+  <footer>
+    <img src="logo.png"/>
+    <div>
+      <h5>Adres</h5>
+      <p> “ZNIKEN” ® Anita Wrona <br/>
+        ul. Kwiatowa 1253 <br/>
+        34-381 Radziechowy 
+      </p>
+    </div>
+    <div>
+      <h5>Kontakt</h5>
+      <p> zniken1@onet.eu <br />
+        tel: +48 514 453 119
+      </p>
+    </div>
+    <div>
+      <h5>NIP</h5>
+      <p> 553-111-33-89 </p>
+    </div>
+    <div>
+      <h5>Bank</h5>
+      <p>	Bank Spółdzielczy w Żywcu <br />
+        82 8137 0009 0030 5219 3000 0010 <br /> <br />
+        Bank ING <br />
+        35 1050 1070 1000 0092 1796 9816
+      </p>
+    </div>
+  </footer>
+  
+  <div id="lightboxripoff">
+    <img id="gallery-quit" src="galeria/accessories/quit-gallery.png" onclick="quitPhoto()"/>
+    <img id="main-photo" src="galeria/zniken-galeria-fs-1.jpg"/>
+    <img id="left-arr" src="galeria/accessories/arrow-gallery-left.png"/>
+    <img id="right-arr" src="galeria/accessories/arrow-gallery-right.png"/>
+    
+  </div>
+</body>  
+
+</html>
